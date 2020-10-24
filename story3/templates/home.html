@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+    {% block content  %}
+    <br>
+        <h1>Hello,</h1  >
+        <p>Welcome to this site, this is part of my PPW project. This site will periodically get updated when there is new project that i've been working on. Stay Tuned</p>
+        <br>
+        <h1>Story</h1>
+        <div class="card-deck">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Story 1</h5>
+                    <p class="card-text">Deploying and making static site</p>
+                    <a href="{% url 'index' %}" class="card-link">Visit</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Story 2</h5>
+                    <p class="card-text">Designing, wireframing, and prototyping</p>
+                    <a href="https://www.figma.com/file/Rc4I5e5vtgLMdPy3mIlrfc/PPW-Story-2?node-id=0%3A1" class="card-link">Wireframe</a>
+                    <a href="https://www.figma.com/file/Rc4I5e5vtgLMdPy3mIlrfc/PPW-Story-2?node-id=44%3A0" class="card-link">Prototype</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Story 3</h5>
+                    <p class="card-text">Creating page based on design, html, css, bootstrap</p>
+                    <a href="{% url 'profile' %}" class="card-link">Visit</a>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <div class="card-deck">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Story 4</h5>
+                    <p class="card-text">Django Views & Templates</p>
+                    <a href="{% url 'home' %}" class="card-link">Visit</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Story 5</h5>
+                    <p class="card-text">Django Models & Dynamic URL</p>
+                    <a href="{% url 'view_matkul' %}" class="card-link"> Visit</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                   <h5 class="card-title">Story 6 </h5>
+                   <p class="card-text">Test driven development & Django relation Models</p>
+                   <a href="{% url 'display-activities' %}" class="card-link"> Visit</a>
+                </div>
+            </div>
+
+        </div>
+    {% endblock  %}

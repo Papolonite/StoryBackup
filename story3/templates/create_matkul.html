@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+    {% block content  %}
+    <br>
+    <h1 class="col-xl-12 col-lg-12 col-md-12 col-sm-12"> Create new Matkul </h1>
+        <br>
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 center">
+            <form method = "POST">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <input class="btn btn-light" type="submit" value="Submit">
+            </form>
+        </div>
+    {% endblock  %}
